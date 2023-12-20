@@ -6,7 +6,7 @@ int main(int argc, char const *argv[])
 {
     /*
     Wskaźniki umożliwiają pobieranie adresu pamięci dla
-    poszczególnych zmiennych. Domyślnie wskaźnik ma rozmiar 4 bajtów.
+    poszczególnych zmiennych.
     Do pobrania adresu wybranej zmiennej posługujemy się operatorem &.
     Deklaracja wskaźnika jest możliwa dzięki użyciu * zaraz po typie tworzonej zmiennej.
     */
