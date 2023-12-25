@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 double obliczSrednia(int** tablica, int liczbaWierszy, int liczbaKolumn) {
     double suma;
     double srednia;
