@@ -5,23 +5,18 @@ class A
 {
 public:
     int x;
-    A()
-    {
+    A() {
         cout<<"Konstruktor klasy A"<<endl;
         x = 0;
     }
-    A(int _x)
-    {
+    A(int _x) {
         cout<<"Konstruktor dodatkowy"<<endl;
         x = _x;
     }
-
-    void Show()
-    {
+    void Show() {
         cout<<"Skladnik x wynosi: "<<x<<endl;
     }
-    ~A()
-    {
+    ~A() {
         cout<<"Destruktor klasy A"<<endl;
     }
 };
@@ -30,13 +25,11 @@ class B : public A
 {
     public:
     int y;
-    B()
-    {
+    B() {
         cout<<"Konstruktor klasy B"<<endl;
-        y = 0;
+        y=0;
     }
-    ~B()
-    {
+    ~B() {
         cout<<"Destruktor klasy B"<<endl;
     }
 };
@@ -50,5 +43,4 @@ int main()
 
     ob2.x = 321;
     ob2.Show();
-
 }
