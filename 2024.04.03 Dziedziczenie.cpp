@@ -1,52 +1,54 @@
 #include <iostream>
-
 using namespace std;
 
 class A
 {
-    public:
+public:
     int x;
-    A() 
+    A()
     {
-        x = 0;
         cout<<"Konstruktor klasy A"<<endl;
+        x = 0;
     }
-    void Show()
+    A(int _x)
     {
-        cout<<x<<endl;
+        cout<<"Konstruktor dodatkowy"<<endl;
+        x = _x;
     }
 
-    ~A() 
+    void Show()
+    {
+        cout<<"Skladnik x wynosi: "<<x<<endl;
+    }
+    ~A()
     {
         cout<<"Destruktor klasy A"<<endl;
     }
 };
 
-
-
 class B : public A
 {
     public:
+    int y;
     B()
     {
         cout<<"Konstruktor klasy B"<<endl;
+        y = 0;
     }
-
     ~B()
     {
         cout<<"Destruktor klasy B"<<endl;
     }
-
 };
 
 int main()
 {
-    A obj1;
-    obj1.Show();
+    A ob1;
+    B ob2;
+    ob1.x = 123;
+    ob1.Show();
 
-    B obj2;
-    obj2.x = 100;
-    obj2.Show();
-
+    ob2.x = 321;
+    ob2.Show();
 
 }
